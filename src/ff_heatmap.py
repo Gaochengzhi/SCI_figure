@@ -194,8 +194,6 @@ def get_f_value(p_truck=0.5):
 
 def plot_f_value():
     data = get_f_value(float(p_truck))
-    for i in range(len(data)):
-        pass
     plt.imshow(data, origin="lower", cmap="gist_ncar")
     plt.clim(-10, 20)
     plt.xlabel("Velocity (km/h)")
